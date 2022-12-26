@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'ubuntu';
+    background-color: antiquewhite;
+    user-select: none;
+    height: 100vh;
+    
+}
+footer{
+    height: 5vh;
+    
+}
+ ul{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.brand-logo{
+    width: 45px;
+    display: inline-block;
+    padding: 0 7px ;
+    margin: 10px 0 10px 2px;
+}
+
+.navbar{
+    background-color: black;
+    height: max-content;
+}
+
+.list2{
+    display:flex;
+    align-items: center;
+    font-family: 'ubuntu';
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.list1{
+    padding: 20px;
+}
+
+ul li span a{
+    padding:0 20px;
+    text-decoration:none;
+    color: aliceblue;
+    font-family: 'ubuntu';
+}
+
+ul li span a:hover{
+    font-weight: bold;
+}
+
+
+.container{
+    overflow-y:auto ;
+    scrollbar-color: dark;
+    height: 62.5vh;
+    background-color: black;
+    color: white;
+    margin: 25px auto;
+    width: 75%;
+    border-radius: 20px;
+    padding: 10px 0 20px 15px ;
+    background-image: url('images/bg.jpg');
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+
+.bottom{
+    position: sticky;
+    background-color: black;
+    height: 100px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    flex-direction: column;
+    margin: 0;
+}
+
+#myProgressBar{
+    width: 70vw;
+    
+}
+.fa-solid{
+    padding: 10px 0 0 0 ;
+    cursor: pointer;
+}
+
+
+.songItem{
+    height: 35px;
+    background-color: white;
+    width: 40%;
+    border-radius: 25px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 10px 0 0;
+    margin: 10px 0 0 0;
+    cursor: pointer;  
+    opacity :0.7;  
+}
+
+.songItem:hover{
+    background-color:white;
+    
+    opacity :1;
+    font-weight: bold;
+}
+
+
+.songItemContainer{
+    margin: 30px 0 0 0;
+}
+
+.songItem img{
+    width:20px;
+    margin: 5px 0 05px 10px;
+    border-radius: 20px;
+    padding: 0 0 2px 0px;
+    cursor: pointer;
+}
+
+
+
+.songName{
+    padding:auto 10px;
+} 
+
+.songListPlay i{
+    padding: 0 2px 0px 10px;
+}
+
+.songInfo{
+    padding: 15px 0 0 0 ;
+    position: absolute;
+    left: 15vw;
+}
+
+footer{
+    background-color: black;
+}
+
+.gif{
+    transition: opacity 0.3s ease-in;
+    
+}
+
+.icons i:hover{
+
+    color: rgb(20, 177, 20);
+    
+}
+
+.songListPlay img , .duration{
+    opacity: 0;
+}
+
+.opacityToOne{
+    opacity: 1;
+}
+
+.normalOpacity{
+    opacity:0.7;
+}
+
+.bottom span{
+    padding: 0 10px;
+}
