@@ -48,12 +48,12 @@ for(let i=0; i<document.querySelectorAll('.songItem').length;i++){
       var musicName =  document.querySelectorAll('.songName')[i].innerText;
 
        let a = updateName(musicName);
-       
+      isPlaying? audioPause(a) : audioPlay(a); 
       $('.nameDisplay').text(musicName);
       audioElement.src = 'sounds/'+musicName+'.mp3';
       audioElement.name = musicName;
-      document.querySelectorAll('.songItem')[i].classList.add(a);
-      isPlaying? audioPause(a) : audioPlay(a);
+//       document.querySelectorAll('.songItem')[i].classList.add(a);
+      
       
       
       audioElement.addEventListener('timeupdate' , function(){
