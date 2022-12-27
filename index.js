@@ -52,10 +52,10 @@ for(let i=0; i<document.querySelectorAll('.songItem').length;i++){
       $('.nameDisplay').text(musicName);
       audioElement.src = 'sounds/'+musicName+'.mp3';
       audioElement.name = musicName;
-//       document.querySelectorAll('.songItem')[i].classList.add(a);
+      document.querySelectorAll('.songItem')[i].classList.add(a);
       
       
-      
+   // code given below is for timer of song   
       audioElement.addEventListener('timeupdate' , function(){
         {
         var timeInMinute = Math.floor((audioElement.currentTime)/60);
@@ -98,7 +98,7 @@ document.querySelector('.play-btn').addEventListener('click' , function(){
 let scrwidth = screen.width;
 let scrHt = screen.height;
 
-if(scrwidth < 1200){
+if(scrwidth < 750){
     $('.bottom').css('min-heigth',''+scrHt);
     $('.container').css('background-image','none');
     $('.songItem').css('width','80%');
@@ -114,9 +114,6 @@ if(scrwidth < 1200){
     $('.icons i').css('padding','30px 10px');
     $('h1').css('margin','100px 120px');
     $('.navbar').css('height' , '100%');
-}
-if(scrwidth<750){
-
 }
 
 
