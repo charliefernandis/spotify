@@ -218,4 +218,9 @@ music = ['rait zara si','kesariya','tera yaar hu mai','humdard','thodi der','jaa
             
     }
      )
+
+$('.songItem').click(function(){
+    console.log($(this));    
+})
+
     
