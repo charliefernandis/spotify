@@ -183,3 +183,11 @@ footer{
 .bottom span{
     padding: 0 10px;
 }
+
+
+.flex-wrapper{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
