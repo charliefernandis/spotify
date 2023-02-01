@@ -191,3 +191,8 @@ footer{
     flex-direction: column;
     justify-content: space-between;
 }
+
+
+.container2{
+    position:sticky;
+}
